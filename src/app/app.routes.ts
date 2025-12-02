@@ -4,7 +4,7 @@ import { LandingPage } from './components/landing-page/landing-page';
 import { Home } from './components/home/home';
 
 export const routes: Routes = [
-  { path: "", redirectTo: "home", pathMatch: "full" },
+  { path: "", redirectTo: RoutePath.HOME, pathMatch: "full" },
   {
     path: RoutePath.HOME,
     title: RoutePathTitles.HOME,

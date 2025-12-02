@@ -19,7 +19,7 @@ export class Footer {
     mobile: '+918888869198',
     whatsapp: '+918888869198',
     email: 'tanveershaikhlucky@gmail.com',
-    website: 'www.rto-services.com'};
+    website: 'https://victorious-glacier-026e78e00.3.azurestaticapps.net/'};
 
   ngOnInit() {
     this.initializeThemeFromStorage();
