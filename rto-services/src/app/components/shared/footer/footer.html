@@ -1,44 +1,55 @@
 <div style="height: 90px;"></div>
-<footer class="app-footer ">
-  <div class="contact-row contact-links">
 
-    <!-- Location (opens Google Maps) -->
+<footer class="app-footer">
+
+  <!-- Contact Links -->
+  <div class="contact-links">
+    <!-- Location -->
     <a class="contact-item" target="_blank" rel="noopener noreferrer"
       [href]="'https://www.google.com/maps/search/?api=1&query=' + contact.location">
-      📍 {{ contact.address }}
+      📍{{ contact.address }}
     </a>
 
-    <!-- Mobile: click to call -->
+    <!-- Mobile -->
     <a class="contact-item" [href]="'tel:' + contact.mobile">
-      📞 {{ contact.mobile }}
+      📞{{ contact.mobile }}
     </a>
 
     <!-- WhatsApp -->
-    <a class="contact-item" target="_blank" rel="noopener noreferrer" [href]="'https://wa.me/' + contact.whatsapp">
-      🟢 WhatsApp
+    <a class="contact-item" target="_blank" rel="noopener noreferrer" [href]="'https://wa.me/' + contact.whatsapp + '?text=' + encodedMessage">
+      <div class="wa-row">
+        <img src="assets/icons/32px-WhatsApp.svg.png" class="wa-icon" /><span>{{ contact.whatsapp }}</span>
+      </div>
     </a>
 
-    <!-- Email: Pre-filled template -->
+
+    <!-- Email -->
     <a class="contact-item"
       [href]="'mailto:' + contact.email + '?subject=Regarding Your Profile&body=Hi Faruk,%0D%0A%0D%0AI would like to connect with you regarding...%0D%0A%0D%0AThanks,'">
       ✉️ {{ contact.email }}
     </a>
 
-    <!-- LinkedIn -->
+    <!-- Website -->
     <a class="contact-item" target="_blank" rel="noopener noreferrer" [href]="contact.website">
-      🔗 website
+      🔗 Website
     </a>
-
   </div>
-  <div>&nbsp; &copy; 2025 Maharashtra Transport • All rights reserved.</div>
-  @if(showThemeButton){
-  <button class="floating-btn" (click)="toggleTheme()" aria-label="Close"
+
+  <!-- Copyright -->
+  <div class="footer-copy">
+    © 2025 Maharashtra Transport • All rights reserved.
+  </div>
+
+  <!-- Theme Buttons -->
+  @if (showThemeButton) {
+  <button class="floating-btn" (click)="toggleTheme()"
     [title]="!isDarkMode ? 'Switch to Dark Mode' : 'Switch to Light Mode'">
-    {{!isDarkMode ? '🌙' : '☀️'}}
+    {{ !isDarkMode ? '🌙' : '☀️' }}
   </button>
-  <!-- Close (X) Button -->
+
   <button class="floating-close-btn" (click)="hideThemeButton()" title="Hide Theme Button">
     ✕
   </button>
   }
+
 </footer>

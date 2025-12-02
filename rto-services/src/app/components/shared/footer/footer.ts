@@ -11,9 +11,11 @@ export class Footer {
   title = 'Rto Services';
   isDarkMode: boolean = false;
   showThemeButton = true;
+  encodedMessage = encodeURIComponent(`Hi Tanveer Daula Sir, I want to connect with you!`);
+
   contact = {
     address: 'Amravati, Maharashtra, India',
-    location: 'Indira Chauk, Nerpinglai',
+    location: 'Regional Transport Office, Amravati, Maharashtra, India',
     mobile: '+918888869198',
     whatsapp: '+918888869198',
     email: 'tanveershaikhlucky@gmail.com',
