@@ -29,7 +29,7 @@ jobs:
  
       - name: Build Angular App
 
-        run: npm run build -- --configuration prod
+        run: npm run build 
  
       - name: Deploy to Azure Static Web Apps
       
@@ -47,11 +47,11 @@ jobs:
       
           api_location: ""
       
-          #output_location: "dist/tanveerrto/browser"
+          #output_location: "dist/rto-services/browser"
       
          # skip_app_build: true  # 🚀 Prevent Azure from re-running npm install/build
           
-          app_location: "dist/tanveerrto/browser"
+          app_location: "dist/rto-services/browser"
           output_location: ""
           skip_app_build: true
 
