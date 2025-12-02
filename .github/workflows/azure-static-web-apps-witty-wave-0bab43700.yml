@@ -37,7 +37,7 @@ jobs:
       
         with:
       
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_MANGO_FOREST_01DFF1B00 }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WITTY_WAVE_0BAB43700 }}
       
           repo_token: ${{ secrets.GITHUB_TOKEN }}
       
