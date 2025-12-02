@@ -2315,8 +2315,8 @@ img {
   position: fixed;
   left: 0;
   width: 100%;
-  background: var(--color-bg-secondary, #ffffff);
-  color: var(--color-text, #000000);
+  background: var(--theme-bg);
+  color: var(--theme-text);
   padding: 10px 12px;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -2338,7 +2338,8 @@ img {
 .app-header {
   position: fixed;
   top: 0;
-  background: var(--color-bg-secondary, #ffffff);
+  background: var(--theme-bg);
+  color: var(--theme-text);
   font-size: 20px;
   height: 55px;
   width: 100%;
