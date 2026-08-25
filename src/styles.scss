@@ -1,105 +1,895 @@
 :root {
+  /* ================================
+     THEME COLORS - LIGHT MODE
+     ================================ */
+
   --theme-bg: #f8f9fa;
   --theme-card-bg: #ffffff;
   --theme-text: #363636;
-  --theme-heading-color: #1A1A1A;
-  --theme-border: #ccc;
+  --theme-heading-color: #1a1a1a;
+  --theme-border: #d9dee7;
   --theme-secondary-bg: #dadada;
-  --banner-text-color: #FFFFFF;
-  --theme-primary: #2563EB;
-  /* Blue 600 */
-  --theme-primary-hover: #1D4ED8;
-  /* Blue 700 */
-  --theme-accent-orange: #F97316;
-  /* Orange 500 */
-  --theme-accent-orange-hover: #EA580C;
-  /* Orange 600 */
+
+  --banner-text-color: #ffffff;
+
+  --theme-primary: #2563eb;
+  --theme-primary-hover: #1d4ed8;
+
+  --theme-accent-orange: #f97316;
+  --theme-accent-orange-hover: #ea580c;
+
   --theme-link-hover: #0d0dad;
+
   --success-color: #28a745;
   --danger-color: #dc3545;
-  --warning-color: #F59E0B;
-  /* Amber 500 */
-  --info-color: #0EA5E9;
-  /* Sky 500 */
-  --error-border-color: #EA002C;
+  --warning-color: #f59e0b;
+  --info-color: #0ea5e9;
+  --error-border-color: #ea002c;
+
   --disabled-bg: #d1d1d1;
   --disabled-color: #444444;
+
+  /* ================================
+     GENERAL SURFACES
+     ================================ */
+
+  --surface-1: #ffffff;
+  --surface-2: #f3f4f6;
+  --surface-3: #f5f8fc;
+
+  /* ================================
+     TEXT
+     ================================ */
+
+  --text-primary: #1a1a1a;
+  --text-secondary: #555555;
+  --text-muted: #666666;
+  --text-light: #ffffff;
+
+  /* ================================
+     BRAND / RTO COLORS
+     ================================ */
+
+  --brand-dark: #002d72;
+  --brand-primary: #003a8c;
+  --brand-logo: #003b8e;
+  --brand-blue: #0057d9;
+  --brand-button: #0a4eb5;
+
+  /* ================================
+     HERO
+     ================================ */
+
+  --hero-bg-start: #f8fbff;
+  --hero-bg-end: #eef4ff;
+
+  /* ================================
+     HEADER
+     ================================ */
+
+  --header-bg: #ffffff;
+  --header-text: #1a1a1a;
+
+  /* ================================
+     BORDERS / SHADOWS
+     ================================ */
+
+  --card-border: #edf1f7;
+  --shadow-color: rgba(0, 0, 0, 0.08);
+  --shadow-light: rgba(0, 0, 0, 0.05);
+  --shadow-medium: rgba(0, 0, 0, 0.06);
+
+  /* ================================
+     OTHER
+     ================================ */
+
+  --whatsapp-color: #25d366;
+  --star-color: #ffb400;
+
   --font-family-base: 'lexendregular', 'Roboto', sans-serif;
   --font-size-base: 14px;
+
   --heading-letter-spacing-0-3: 0.3px;
   --letter-spacing-0: 0px;
+
   --unnamed-font-style-normal: normal;
-  /* Surfaces */
-  --surface-1: var(--theme-card-bg);
-  --surface-2: #f3f4f6;
-  /* Gray 100 */
-  /* Header */
-  --header-bg: #3F51B5;
-  /* Indigo 500 */
-  --header-text: #ffffff;
 }
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
 
 html.dark-mode,
 body.dark-mode {
-  --theme-bg: #121212;
-  --theme-card-bg: #1e1e1e;
-  --theme-text: #e0e0e0;
-  --theme-heading-color: #f8f8f8;
-  --theme-border: #444444;
-  --theme-secondary-bg: #2d2d2d;
-  --banner-text-color: #f8f8f8;
-  --theme-primary: #60A5FA;
-  /* Blue 400 */
-  --theme-primary-hover: #3B82F6;
-  /* Blue 500 */
-  --theme-accent-orange: #FB923C;
-  /* Orange 400 */
-  --theme-accent-orange-hover: #F97316;
-  /* Orange 500 */
+
+  /* ================================
+     MAIN THEME
+     ================================ */
+
+  --theme-bg: #0f172a;
+  --theme-card-bg: #1e293b;
+  --theme-text: #e2e8f0;
+  --theme-heading-color: #f8fafc;
+  --theme-border: #334155;
+  --theme-secondary-bg: #334155;
+
+  --banner-text-color: #f8fafc;
+
+  --theme-primary: #60a5fa;
+  --theme-primary-hover: #93c5fd;
+
+  --theme-accent-orange: #fb923c;
+  --theme-accent-orange-hover: #fdba74;
+
+  --theme-link-hover: #93c5fd;
+
+  /* ================================
+     SURFACES
+     ================================ */
+
+  --surface-1: #1e293b;
+  --surface-2: #273449;
+  --surface-3: #172033;
+
+  /* ================================
+     TEXT
+     ================================ */
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-light: #ffffff;
+
+  /* ================================
+     BRAND
+     ================================ */
+
+  --brand-dark: #60a5fa;
+  --brand-primary: #60a5fa;
+  --brand-logo: #93c5fd;
+  --brand-blue: #60a5fa;
+  --brand-button: #2563eb;
+
+  /* ================================
+     HERO
+     ================================ */
+
+  --hero-bg-start: #172033;
+  --hero-bg-end: #1e293b;
+
+  /* ================================
+     HEADER
+     ================================ */
+
+  --header-bg: #1e293b;
+  --header-text: #f8fafc;
+
+  /* ================================
+     BORDERS / SHADOWS
+     ================================ */
+
+  --card-border: #334155;
+  --shadow-color: rgba(0, 0, 0, 0.35);
+  --shadow-light: rgba(0, 0, 0, 0.25);
+  --shadow-medium: rgba(0, 0, 0, 0.3);
+
+  /* ================================
+     TABULATOR
+     ================================ */
+
   --tabulator-header-bg: var(--theme-secondary-bg) !important;
   --tabulator-header-text: var(--theme-text) !important;
-  --surface-1: #111827;
-  /* Gray 900 */
-  --surface-2: #1F2937;
-  /* Gray 800 */
-  --header-bg: #111827;
-  /* Slate 900 */
-  --header-text: #e5e7eb;
-  /* Gray 200 */
+
   background-image: none !important;
   background-color: var(--theme-bg) !important;
 }
 
-/* Remove decorative background images in dark mode */
+
+/* =========================================================
+   DARK MODE - SPECIFIC COMPONENTS
+   ========================================================= */
+
 body.dark-mode .chat {
   background-image: none !important;
   background-color: var(--surface-1) !important;
 }
 
 
+/* =========================================================
+   FONT
+   ========================================================= */
 
 @font-face {
   font-family: 'lexendregular';
   src: url('./assets/fonts/lexend-variablefont_wght-webfont.woff2') format('woff2'),
-    url('./assets/fonts/lexend-variablefont_wght-webfont.woff') format('woff');
+       url('./assets/fonts/lexend-variablefont_wght-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
 
 body {
   height: 100%;
   margin: 0;
   padding: 0;
+
   font-family: var(--font-family-base);
   color: var(--theme-text);
   font-size: var(--font-size-base);
+
   background-color: var(--theme-bg);
-  // background-image: url('assets/images/chat-bg-img.png');
+
+  /* background-image: url('assets/images/chat-bg-img.png'); */
+
   background-size: cover !important;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
 }
+
+
+/* =========================================================
+   NAVBAR / HEADER
+   ========================================================= */
+
+.navbar {
+  background: var(--header-bg);
+  color: var(--header-text);
+
+  box-shadow: 0 2px 10px var(--shadow-color);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--brand-primary);
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+nav a:hover {
+  color: var(--theme-primary);
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.logo-main {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--brand-logo);
+}
+
+.logo-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 3px;
+}
+
+
+/* =========================================================
+   HEADER RIGHT
+   ========================================================= */
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.contact strong {
+  color: var(--text-primary);
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.apply-btn {
+  background: var(--brand-button);
+  color: var(--text-light);
+  border: none;
+
+  padding: 12px 22px;
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s ease;
+}
+
+.apply-btn:hover {
+  background: var(--theme-primary-hover);
+}
+
+.hero-buttons button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero-buttons button:first-child {
+  background: var(--brand-blue);
+  color: var(--text-light);
+}
+
+.hero-buttons button:first-child:hover {
+  background: var(--theme-primary-hover);
+}
+
+.whatsapp {
+  background: var(--whatsapp-color);
+  color: var(--text-light);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  padding: 40px 0 60px;
+
+  background: linear-gradient(
+    to right,
+    var(--hero-bg-start),
+    var(--hero-bg-end)
+  );
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 650px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 800;
+
+  margin-bottom: 20px;
+
+  color: var(--brand-dark);
+}
+
+.hero h1 span {
+  color: var(--brand-blue);
+  display: inline;
+}
+
+.hero p {
+  margin: 20px 0;
+  color: var(--text-secondary);
+}
+
+.hero-content p {
+  font-size: 18px;
+  max-width: 520px;
+}
+
+.hero-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.hero-features div {
+  background: var(--theme-card-bg);
+
+  padding: 14px;
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px var(--shadow-light);
+
+  color: var(--text-primary);
+  font-weight: 600;
+
+  border: 1px solid var(--card-border);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.services {
+  padding: 80px 0;
+  background: var(--theme-bg);
+}
+
+.services h2,
+.process h2,
+.testimonial h2 {
+  text-align: center;
+
+  color: var(--brand-primary);
+
+  margin-bottom: 40px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(260px, 1fr)
+  );
+
+  gap: 20px;
+}
+
+.service-card {
+  background: var(--theme-card-bg);
+
+  border: 1px solid var(--card-border);
+
+  border-radius: 14px;
+
+  padding: 25px;
+
+  box-shadow: 0 5px 20px var(--shadow-color);
+
+  transition:
+    transform 0.3s ease,
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  margin-bottom: 15px;
+  color: var(--brand-dark);
+}
+
+.service-card ul {
+  padding-left: 18px;
+}
+
+.service-card li {
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+}
+
+.view-all {
+  display: inline-block;
+
+  margin-top: 15px;
+
+  color: var(--brand-blue);
+
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.view-all:hover {
+  color: var(--theme-primary-hover);
+}
+
+
+/* =========================================================
+   WHY US
+   ========================================================= */
+
+.why-us {
+  padding: 70px 0;
+  background: var(--surface-3);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.why-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.why-item {
+  margin: 15px 0;
+
+  background: var(--theme-card-bg);
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  border: 1px solid var(--card-border);
+
+  color: var(--text-primary);
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.why-item h4 {
+  margin-bottom: 10px;
+  color: var(--brand-dark);
+}
+
+
+/* =========================================================
+   STATS
+   ========================================================= */
+
+.stats {
+  background: var(--brand-dark);
+
+  color: var(--text-light);
+
+  border-radius: 14px;
+
+  padding: 30px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+
+  text-align: center;
+}
+
+.stats h3 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   PROCESS
+   ========================================================= */
+
+.process {
+  padding: 80px 0;
+  background: var(--theme-bg);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.step {
+  text-align: center;
+
+  background: var(--theme-card-bg);
+
+  padding: 25px;
+
+  border-radius: 14px;
+
+  box-shadow: 0 4px 15px var(--shadow-medium);
+
+  border: 1px solid var(--card-border);
+
+  color: var(--text-primary);
+
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.step span {
+  width: 70px;
+  height: 70px;
+
+  background: var(--brand-primary);
+
+  color: var(--text-light);
+
+  border-radius: 50%;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: auto auto 15px;
+}
+
+.step h4 {
+  margin-bottom: 10px;
+  color: var(--brand-dark);
+}
+
+.step p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   TESTIMONIAL
+   ========================================================= */
+
+.testimonial {
+  padding: 70px 0;
+  background: var(--surface-3);
+}
+
+.review-card {
+  max-width: 700px;
+
+  margin: auto;
+
+  background: var(--theme-card-bg);
+
+  padding: 30px;
+
+  border-radius: 14px;
+
+  box-shadow: 0 5px 20px var(--shadow-color);
+
+  border: 1px solid var(--card-border);
+
+  color: var(--text-primary);
+}
+
+.review-card p {
+  font-size: 18px;
+  line-height: 1.7;
+
+  color: var(--text-secondary);
+}
+
+.stars {
+  color: var(--star-color);
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   SECTION SUBTITLE
+   ========================================================= */
+
+.section-subtitle {
+  text-align: center;
+
+  margin-top: -20px;
+  margin-bottom: 40px;
+
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  background: var(--brand-dark);
+
+  color: var(--text-light);
+
+  padding: 50px 0;
+}
+
+footer h3 {
+  margin-bottom: 18px;
+  color: var(--text-light);
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.8);
+
+  margin-bottom: 10px;
+
+  line-height: 1.7;
+}
+
+.footer-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+/* =========================================================
+   CONTACT LINKS
+   ========================================================= */
+.header-contact-item{
+  text-decoration: none;
+
+  color: var(--theme-heading-color);
+  font-size: 16px;
+}
+.contact-item {
+  text-decoration: none;
+
+  // color: var(--theme-text);
+  color: #FFF;
+
+  font-size: 14px;
+}
+
+.contact-item:hover {
+  color: var(--theme-link-hover);
+
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   WHATSAPP ICON
+   ========================================================= */
+
+.wa-icon {
+  width: 20px;
+  height: 20px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   HOME PAGE
+   ========================================================= */
+
+body.rto-home-page {
+  background: var(--theme-bg);
+}
+
+
+/* =========================================================
+   RESPONSIVE - 992px
+   ========================================================= */
+
+@media (max-width: 992px) {
+
+  .hero-wrapper1,
+  .why-grid {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-list {
+    grid-template-columns: 1fr;
+  }
+
+  .header-right {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE - 768px
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .hero-features {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-wrapper {
+    gap: 20px;
+  }
+}
+
+
+
+
+
 
 .form-container,
 .modal-content,
@@ -2372,25 +3162,6 @@ img {
   margin-top: 6px;
 }
 
-.contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 15px;
-  row-gap: 10px;
-  margin-bottom: 8px;
-}
-
-.contact-item {
-  text-decoration: none;
-  color: var(--theme-primary);
-  font-size: 14px;
-}
-
-.contact-item:hover {
-  color: var(--theme-link-hover);
-  text-decoration: underline;
-}
 
 .wa-row {
   display: flex;
