@@ -10,13 +10,18 @@ import { NavigationURLs } from '../../../../utils/application-constants';
   styleUrl: './site-under-development.css'
 })
 export class SiteUnderDevelopment {
+  NavigationURLs = NavigationURLs;
+  alreadyLoggedIn: boolean = true;
   constructor(private router: Router,
   ) {
   }
-  NavigationURLs = NavigationURLs;
-  alreadyLoggedIn: boolean = true;
 
   ngOnInit() {
     console.log('Site Under Development Loaded');
   }
+    goBack(): void {
+    this.router.navigate(['home']);
+    // this.logoutService.logout();
+  }
+
 }
