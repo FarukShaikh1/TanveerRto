@@ -7,25 +7,26 @@ import { RtoOwnerComponent } from './components/rto/rto-owner/rto-owner.componen
 
 export const routes: Routes = [
   { path: "", redirectTo: RoutePath.HOME, pathMatch: "full" },
-    {
-    path: "", 
+  {
+    path: "",
     pathMatch: "full",
     component: RtoHomepageComponent,
     title: "Tanveer Daula RTO agent"
   },
   {
-    path: "rto-home", 
+    path: "rto-home",
     pathMatch: "full",
     component: RtoHomepageComponent,
     title: "Tanveer Daula RTO agent"
   },
-    {
-    path: "rto-owner", 
+  {
+    path: "rto-owner",
     pathMatch: "full",
     component: RtoOwnerComponent,
     title: "Tanveer Daula RTO agent"
   },
   { path: "home", redirectTo: "home", pathMatch: "full" },
+  { path: "**", redirectTo: "" },
 
   // {
   //   path: RoutePath.HOME,
